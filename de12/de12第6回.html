@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>データ分析</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="shortcut icon" href="../../images/xbp.ico">
+</head>
+<body>
+    <logotohome>
+        <a href="../../index.html"><img src="../../images/0_XBlogo.png" alt=""></a>
+    </logotohome>
+    <div>
+        <h2>データ分析</h2>
+        課題：おすすめエリアの紹介を使用<br>
+        自分だったらどこに住みたいかという観点からおすすめエリアを決定していきます。
+        <h3>データから得られる情報とは？</h3>
+        今回データから得られるのは以下の物件についての情報です。
+        <ol>
+            <li>物件の名称</li>
+            <li>物件のカテゴリ(賃貸アパート、賃貸マンションetc...)</li>
+            <li>住所</li>
+            <li>アクセス</li>
+            <li>最寄り路線</li>
+            <li>最寄り駅orバス停</li>
+            <li>乗換にかかる時間</li>
+            <li>バスにかかる時間</li>
+            <li>徒歩にかかる時間</li>
+            <li>車にかかる時間</li>
+            <li>通学合計時間</li>
+            <li>物件の築年数</li>
+            <li>物件の構造</li>
+            <li>物件が何階建てであるか</li>
+            <li>家賃</li>
+            <li>物件の管理費</li>
+            <li>敷金</li>
+            <li>礼金</li>
+            <li>間取り</li>
+            <li>面積</li>
+        </ol>
+        この情報の中からいくつかに条件を課し、おすすめエリアの決定を試みます<br>
+        <h3>補足</h3>
+         個人的に聞いたことはあるけれどよく知らない単語、知っているけれど詳しくない単語が情報カテゴリの中に見られたのでここにまとめておきます。<br>
+
+　　　　 築年数・・・築年数というのはどのくらいの年数だとどのくらい古いのか、居心地にかかわってくるのかを知らない<br>
+        <a href="https://ieagent.jp/liveli/chikunensuu" target=_blank>このサイト</a>を参考に、築20~30年のモノを今回は狙います。<br>
+　　　　 構造・・・情報一覧に乗っている数字が何を表すのかわからない<br>
+        家賃・・・自分は実家暮らしなので家賃や光熱費、食費が学生一人だとどのくらい圧迫感があるのかを知らない<br>
+        今回はひとまずなるべく安くを目標にします。<br>
+        物件の管理費・・・純粋になんことか全くわからない <br>
+        <a href="https://www.homes.co.jp/cont/rent/rent_00147/" target=_blank>このサイト</a>を参考に、家賃と同じくなるべく安さを追求したいと考えます.<br>
+        ☆面積に応じて高額になる傾向にある<br>
+        敷金、礼金・・・聞いたことしかない<br>
+        <a href="https://suumo.jp/article/oyakudachi/oyaku/chintai/fr_money/chintai_shokihiyou_shikirei/" target=_blank>このサイト</a>を参考に、これまたなるべく安くを狙いたいと思います。<br>
+        <ul>
+            <li><h3>家賃</h3>
+                自分だったら家賃よりも自分の好きなことにお金を使いたいので、家賃はなるべく抑えたいと考えます。<br>
+                仮にいざ本当に物件探しということになったら家賃重視で考えて後は内観等で絞ると思います<br>
+                よってなるべく家賃の安い傾向にある場所を調べます。<br>
+                <img src="Figure_1.png" width=100%><br>
+
+                   
+            乗換時間が短く、合計金額が安く、家賃も安いというちょうどいいいいとこどりを目指します<br>
+        <img src=Figure_1(路線-乗換時間).png width="30%">
+　　    <img src=Figure_1(路線-合計時間).png width="30%">
+        <img src=Figure_1(路線-家賃).png width="30%"><br>
+        これらのグラフより、乗換時間が短く家賃が安いほど、合計時間が短い、逆も然りという傾向が見て取れる。
+        よって、家賃が高額(8万~)なことからみなとみらい線、JR根岸線が、
+        乗換時間が長時間(50分~)であることから小田急多摩線、京王線、京王相模原線、小田急線、東急こどもの国線、東急田園都市線が、
+        合計時間が長時間(60分~)であることからJR山手線、小田急江ノ島線、湘南モノレール、東京モノレールを除外<br>
+    <div>
+        <h3>参考サイト等まとめ</h3>
+        <a href="https://ieagent.jp/liveli/chikunensuu" target=_blank>  築年数は何年を目安に探すべき？古い賃貸物件に賢く住むためのコツを大公開！</a><br>
+        <a href="https://www.homes.co.jp/cont/rent/rent_00147/" target=_blank>賃貸物件の管理費ってそもそも何？ 損をしないための基礎知識</a><br>
+        <a href="https://suumo.jp/article/oyakudachi/oyaku/chintai/fr_money/chintai_shokihiyou_shikirei/" target=_blank>敷金・礼金って何？　違いは？　敷金・礼金ゼロの物件があるのはなぜ？</a><br>
+        <a href="https://tsudango-tech.com/106/" target=_blank>Python, matplotlibで作成するグラフの大きさ、文字サイズの調整およびグラフが見切れないようにする方法</a><br>
+        
+
+　　　　
